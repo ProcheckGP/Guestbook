@@ -14,4 +14,11 @@ class MessageModel
         $stmt->execute();
         return $stmt->fetchAll();
     }
+
+    public function createNewMessage($name, $email, $title, $content, $created)
+    {
+        $stmt = Database::prepare("INSERT INTO `messages` (name, email, title, content, created)
+                                VALUES (?, ?, ?, ?, ?)");
+        return $stmt->execute([$name, $email, $title, $content, $created]);
+    }
 }

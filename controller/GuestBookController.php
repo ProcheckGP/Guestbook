@@ -20,4 +20,19 @@ class GuestBookController
         require_once 'view/outputMessage.php';
         require_once 'view/footer.php';
     }
+
+    public function create()
+    {
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            if (isset($_POST['name'], $_POST['email'], $_POST['title'], $_POST['content'])) {
+                $this->message->createNewMessage(
+                    $_POST['name'],
+                    $_POST['email'],
+                    $_POST['title'],
+                    $_POST['content'],
+                    date("Y-m-d H:i:s")
+                );
+            }
+        }
+    }
 }
