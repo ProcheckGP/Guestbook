@@ -1,0 +1,36 @@
+body {
+    background-color: rgb(215, 215, 255);
+}
+
+.page-title {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.form-output-message {
+    width: 50%;
+    margin-left: 40px;
+    margin-top: 20px;
+    border: 2px solid rgb(100, 100, 100);
+    border-radius: 20px;
+    background-color: white;
+}
+
+.form-output-message-header {
+    background-color: rgb(224, 255, 151);
+    border-bottom: 2px solid rgb(100, 100, 100);
+    border-top-left-radius: 18.5px;
+    border-top-right-radius: 18.5px;
+}
+
+.form-output-message-name {
+    font-weight: 600;
+}
+
+.form-output-message-email {
+    font-size: 12px;
+}
+
+.form-output-message-time {
+    text-align: right;
+}
