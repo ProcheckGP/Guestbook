@@ -9,7 +9,7 @@ class Database
         $config = require __DIR__ . '/config.php';
 
         $this->connection = new PDO(
-            $config['dsm'],
+            $config['dsn'],
             $config['username'],
             $config['password'],
             $config['options']
